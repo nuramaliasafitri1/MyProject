@@ -1,1 +1,23 @@
 rahasia.txt
+# Sebuah Komentar - ini akan diabaikan
+
+*.env 
+# abaikan semua file dengan akhiran .env
+
+!lib.env 
+# tetapi lakukan track pada lib.env, jika telah mengabaikan file .env diatas
+
+/TODO 
+# Hanya abaikan semua file yang ada di dalam TODO, tetapi tidak dengan subdirektori /TODO
+
+build/ 
+# abaikan semua file di dalam direktori build/ termasuk di dalam subdirektorinya
+
+doc/*.txt 
+# abaikan doc/notes.txt, tetapi tidak dengan doc/server/arch.text
+
+[abc] 
+# yang berarti karakter apa saja yang ada diantara simbol bracket, contoh : a,b atau contoh
+
+?
+# Karakter apa saja cocok asalkan terdiri dari satu karakter 
